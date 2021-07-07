@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+<body>
+<form>
+    <table>
+    
+        <tr> <td>用户名</td> <td><input type="text" name="username" value="请输入用户名" maxlength="6"></td> </tr>
+        <tr><td>上传头像</td> <td><input type="file"></td> </tr>
+        <tr> <td>密码</td> <td><input type="password" name="密码" ></td></tr> 
+        <tr> <td>性别</td> <td><input type="radio" name="sex" value="男" id="nan"><label for="nan">男</label>   
+        <input type="radio" name="sex" value="女" id="nv"><label for="nv">女</label>  
+        <input type="radio" name="sex" value="人妖" checked="checked" id="renyao"><label for="renyao">人妖</label></td></tr>
+        <tr> <td>爱好</td>  <td><input type="checkbox" name="hobby" value="打lol"> 打lol <input type="checkbox" name="hobby" value="打篮球" >打篮球
+        <input type="checkbox" name="hobby" value="打网球" >打网球 </td></tr>
+        <tr><td>丁丁长得像什么？</td>
+        <td>
+            <select>
+                <option selected="selected">彭于晏</option>
+                <option>美女</option>
+                <option>shit</option>
+            </select>
+        </td></tr>
+        <tr><td>请评价一下丁丁：</td>
+        <td><textarea>有点tm帅！</textarea></td></tr>
+    </table> 
+       <input type="submit" value="快快呈上"> <input type="reset" value="重开">
+    
+</form>
+</body>
+</html>
