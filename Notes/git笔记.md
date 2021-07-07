@@ -4,21 +4,21 @@
 
 1. 创建git库
 
-   ![创建git库](D:\编程\冰岩夏令营\上课笔记\截图\创建git库.png)
+   ![创建git库](https://i.loli.net/2021/07/07/ldyqTCNjRAPKHJF.png)
 
 2. 上传文件
 
-   ![上传文件](D:\编程\冰岩夏令营\上课笔记\截图\add和commit文件.png)
+   ![上传文件](https://i.loli.net/2021/07/07/PZ9L2cOAtHQvE76.png)
 
 3.  git status 可以看状态 git diff 具体看修改的内容， 改完重新add 和 commit就好（add前status里modified是红色，add后变绿色）
 
 4. git log 看修改历史(commit 后面是id)（git log --pretty=oneline 更好看）
 
-   ![git log解图](D:\编程\冰岩夏令营\上课笔记\截图\gitlog.png)
+   ![git log解图](https://i.loli.net/2021/07/07/HGvAibTZn52aLhX.png)
 
    5. git reset(版本间关系HEAD^   / 去未来 id (git reflog 可以查历史命令的id))(HEAD^的方式感觉不是很方便，干脆就直接id就好了)
 
-   ![git reset](D:\编程\冰岩夏令营\上课笔记\截图\git reset.png)
+   ![git reset](https://i.loli.net/2021/07/07/2P6wbCABXOpDv7s.png)
 
    6. git的缓存区和版本区： commit就是对整个git库的版本截图而不是对单独文件的截图，reset功能的前进后退是HEAD标签赋予的.
 
@@ -28,19 +28,19 @@
 
       如果修改进了缓存区，Git同样告诉我们，用命令`git reset HEAD <file>`可以把暂存区的修改撤销掉（unstage），重新放回工作区：
 
-      ![git checkout](D:\编程\冰岩夏令营\上课笔记\截图\git checkout.png)
+      ![git checkout](https://i.loli.net/2021/07/07/6AJ1NtfCLMb2sVR.png)
 
    9. git 删除: git rm file + git commit --m ""   工作区误删git checkout -- file
 
    10. 远程库 github
 
-       ![github](D:\编程\冰岩夏令营\上课笔记\截图\远程库.png)
+       ![github](https://i.loli.net/2021/07/07/ECoZJ2xjA9gstpO.png)
 
        ```
        $ git push origin master 把本地库镜像到远程库
        ```
 
-![删除远程库](D:\编程\冰岩夏令营\上课笔记\截图\删除远程库.png)
+![删除远程库](https://i.loli.net/2021/07/07/yjUpe59x7EF3kuz.png)
 
 克隆远程库：$ git clone git@github.com:michaelliao/gitskills.git
 
@@ -58,9 +58,9 @@
     6，切换分支：git switch master
     ```
 
-    ![快速合并](D:\编程\冰岩夏令营\上课笔记\截图\快速合并.png)
+    ![快速合并](https://i.loli.net/2021/07/07/xfCd76i2zaPU1Yh.png)
 
-    ![冲突](D:\编程\冰岩夏令营\上课笔记\截图\冲突.png)
+    ![冲突](https://i.loli.net/2021/07/07/rGe8nqE6wCd9hLR.png)
 
     
 
@@ -75,7 +75,7 @@
 $ git merge --no-ff -m "merge with no-ff" dev
 ```
 
-![非快速合并](D:\编程\冰岩夏令营\上课笔记\截图\非快速合并.png)
+![非快速合并](https://i.loli.net/2021/07/07/KuZVt8kpTlMCPX7.png)
 
 此时缓存区还有东西，正在工作，需要切换到其他分支，临时进行完全不同的工作，且当前为commit的文件不能commit：
 
@@ -83,7 +83,7 @@ $ git merge --no-ff -m "merge with no-ff" dev
 git stash 将现在工作储藏起来
 ```
 
-![stash](D:\编程\冰岩夏令营\上课笔记\截图\git stash恢复.png)
+![stash](https://i.loli.net/2021/07/07/MsyQuxAIWVni9EB.png)
 
 恢复回dev分支的工作状态后，由于master的bug，分支dev中也存在，所以需要在分支一 同步分支二的版本
 
@@ -101,7 +101,7 @@ $ git cherry-pick 4c805e2（分支二想要同步的commit命令代码）
 
     **抓取分支** : git pull 
 
-![多人协作](D:\编程\冰岩夏令营\上课笔记\截图\多人协作.png)
+![多人协作](https://i.loli.net/2021/07/07/pkBZNF8AH2huCKY.png)
 
 当你的小伙伴从远程库clone时，默认情况下，你的小伙伴只能看到本地的`master`分支。现在，你的小伙伴要在`dev`分支上开发，就必须创建远程`origin`的`dev`分支到本地，于是他用这个命令创建本地`dev`分支：
 
