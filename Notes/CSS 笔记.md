@@ -1,4 +1,4 @@
-## CSS 自学
+CSS 自学
 
 1. #### 总述
 
@@ -196,3 +196,156 @@ input:focus {}
 9. #### snipaste
 
    ![snipaste](https://i.loli.net/2021/07/08/Xb4QAE32g5OHM6l.png)
+
+10. #### css背景
+
+    ```
+    1, background-image:none|url(url) （小图片或超大图片，容易布局）（默认情况平铺）
+    2, background-repeat: repeat|no-repeat|repeat-x|repeat-y
+    3.背景位置：方位名词顺序无关；精准单位/混合单位顺序x，y确定（没写的默认居中）
+    4.背景位置固定:background-attachment:fixed|scroll
+    5.背景颜色半透明：background: rgba（r,g,b,a)(a:透明度0-1 1不透)
+    ```
+
+    ![北京位置](https://i.loli.net/2021/07/09/iEAuO2N3yVrfxvb.png)
+
+![背景复合](https://i.loli.net/2021/07/09/WAgIPiaLtEoYpM1.png)
+
+11. #### css的三大特性
+
+    ![继承性](https://i.loli.net/2021/07/09/tqb8PBHWkKhZTFN.png)
+
+    
+
+    
+
+    ![行高继承](https://i.loli.net/2021/07/09/28MYDpZUnhJdwB7.png)
+
+    
+
+    ![层叠行](https://i.loli.net/2021/07/09/RZ38YEUmqfNyxrb.png)
+
+![优先级](https://i.loli.net/2021/07/09/TmLxvfaJCdupcr7.png)
+
+(复合选择题有权重的叠加，无进位)
+
+
+
+12. #### 盒子组成
+
+    ![盒子组成](https://i.loli.net/2021/07/09/zhiro2QnsEMDckf.png)
+
+    1. 盒子边框
+
+       ```
+       border-width:边框粗细
+       border-style：solid实线|dashed虚线|dotted点线
+       border-color
+       复合：border: 1px solid red;
+       四个框分开写: border-top\bottom\left\right
+       border-collapse:collapse; 合并相邻边框
+       border是附加大小(会改变实际大小)
+       ```
+
+    2. 盒子内边框
+
+       ```
+       padding-left\right\top\bottom
+       也是凭空加的大小，会撑开盒子（不设置盒子宽高就不会撑）
+       ```
+
+       ![padding复合](https://i.loli.net/2021/07/09/IATq3SU9RFG1Qd6.png)
+
+    3. 外边距margin
+
+       (单独写法和复合都和padding一样)
+
+       (块级 （设置了width）： margin: 0 auto-----左右对齐)
+
+    4. 嵌套塌陷
+
+       给父元素定义上边框/上内边距
+
+    5. 清除默认边距
+
+       ```
+       * {
+       padding:0;
+       margin:0;
+       }
+       ```
+
+    6.  圆角边框
+
+       ```
+       border-radius:xxpx;/50%/不同圆角(4)：左上顺时针
+       ```
+
+    7. 盒子阴影
+
+       ![盒子阴影](https://i.loli.net/2021/07/09/gB3DPQehbO9CLsH.png)
+
+    8. 文字阴影
+
+       ![文字阴影](https://i.loli.net/2021/07/09/o3ILUhOFc85jfdq.png)
+
+13.  #### 页面布局
+
+    1. 浮动
+
+       ```
+       选择器 { float：none/left/right}
+       浮动元素具有行内块特性
+       ```
+
+    2. 清除浮动
+
+       ```
+       选择器 {clear： both；}
+       1，额外标签法： 最后一个标签+<div style=“clear：both”></div>
+       2.父级标签 overflow: hidden
+       ```
+
+       3. ![after伪元素](https://i.loli.net/2021/07/09/o19ViNBbst42jEF.png)
+
+       4. 双伪元素![双伪元素](https://i.loli.net/2021/07/09/37gfuWinwZlkoA1.png)
+
+14. #### flex布局
+
+    ```
+    display: flex
+    ```
+
+    ![常见父项属性](https://i.loli.net/2021/07/09/FlwcAQn7IDWhv1r.png)
+
+    1. flex-direction
+
+       ![direction](https://i.loli.net/2021/07/09/VXsA2vYtxGKgwFT.png)
+
+    2. justify-content
+
+       ![主轴上位置](https://i.loli.net/2021/07/09/JLRiI7srFdxnQjX.png)
+
+    3. flex-wrap
+
+       ![子项目换行](https://i.loli.net/2021/07/09/bna7QCTDkWdZO3u.png)
+
+    4. align-items(子元素相对侧轴为单行)
+
+       ![侧轴排列](https://i.loli.net/2021/07/09/asD1zrfkmpc4diF.png)
+
+    5. align-contetn(换行)(单行下没效果)
+
+       ![侧轴排列](https://i.loli.net/2021/07/09/oF7nTWhw8edft3B.png)
+
+    6. flex-flow(1，3的复合属性)
+
+       ```
+       flex-flow: row wrap;
+       ```
+
+       
+    
+    7. flex 属性
+    
+       ![flex](https://i.loli.net/2021/07/10/JkUdb6QFjXDKorG.png)
