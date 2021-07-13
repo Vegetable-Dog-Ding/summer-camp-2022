@@ -1,0 +1,127 @@
+.kill {
+    display: flex;
+    width: 1190px;
+    height: 260px;
+    margin: 0px auto 20px;
+    background-color: #fff;
+}
+.kill a {
+    width: 190px;
+}
+.kill .kill-list {
+    position: relative;
+    width: 800px;
+    display: flex;
+}
+.kill .kill-brand {
+    width: 180px;
+    margin: 10px;
+    background-color: #f1f3f8;
+    font-size: 14px;
+}
+.kill .kill-list .kill-item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+}
+.kill .kill-list .kill-item .kill-item-page {
+    margin: 30px 30px 0 30px;
+}
+.kill .kill-list .kill-item .kill-item-title {
+    margin: 13px 20px 0 20px;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+.kill .kill-list .kill-item .kill-item-price {
+    margin: 7px auto 0 auto;
+}
+.kill .kill-list .kill-item .kill-item-price .kill-sale, .normal-price {
+    border: 1px solid black;
+    border-collapse: collapse;
+    line-height: 22px;
+}
+.kill .kill-list .kill-item .kill-item-price .kill-sale {
+    display: inline-block;
+    height: 22px;
+    width: 92px;
+    color: #fff;
+    background-color: #e1251b;
+    font-size: 18px;
+    text-align: center;
+}
+.kill .kill-list .kill-item .kill-item-price .normal-price {
+    display: inline-block;
+    height: 22px;
+    width: 66px;
+    color: #9c9c9c;
+    font-size: 12px;
+    text-align: center;
+}
+.kill-list img {
+    transition: all 0.5s ease;
+}
+.kill-list a:hover img {
+    filter: brightness(120%);
+}
+.kill-brand .brand-info p {
+    margin-bottom: 3px;
+}
+.kill-brand .brand-image {
+    margin: 20px 30px 10px 30px;
+}
+.kill-brand .brand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.kill-brand .brand-info .brand-action {
+    border-radius: 14px;
+    border: 1px solid red;
+    color: red;
+    width: 82px;
+    height: 24px;
+    line-height: 24px;
+    transition: all 0.2s ease;
+}
+.kill-brand img {
+    width: 120px; 
+    height: 120px;
+    transition: all 0.2s ease;
+}
+.kill-brand:hover img {
+    filter: brightness(120%);
+}
+.kill-brand .brand-action:hover {
+    background-color: red;
+    color: #fff;
+}
+.kill-list .kill-next, .kill-last{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    right: 0px;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 18px 0px 0px 18px;
+    background-color:  rgba(0,0,0,.15);
+    border: 0px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.kill-list .kill-last {
+    left: 0px;
+    border-radius: 0px 18px 18px 0px;
+}
+.kill-list #kill-next-icon, #kill-last-icon {
+    color:#eeeeee;
+}
+.kill-list .kill-next:hover, .kill-last:hover {
+    background-color:  rgba(0,0,0,.25);
+}

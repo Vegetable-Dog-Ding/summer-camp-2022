@@ -1,0 +1,113 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    min-width: 1190px;
+    height: 140px;
+    background-color:#ffffff;
+}
+.nav .w {
+    display: flex;
+    position: relative;
+    width: 1190px;
+    align-items: center;
+}
+.logo_tit_lk {
+    display: block;
+    background-image: url(https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/sprite/header/sprite.png);
+    height: 120px;
+    width: 190px;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+}
+#nav-items {
+    height: 40px;
+    width: 746.74px;
+    position: absolute;
+    bottom: 0px;
+    left: 203px;
+    color:#666;
+    padding: 20px 0px 0px;
+}
+#nav-items a {
+    display: inline-block;
+    color: #333;
+    margin: 8px 7px 0;
+}
+#nav-items a.strong {
+    color: #e1251b;
+    font-weight: 700;
+}
+.search .form {
+    position: absolute;
+    left: 260px;
+    top: 24px;
+    width: 546px;
+    height: 32px;
+    border: 2px solid #e2231a;
+    color: #666;
+}
+.search .key {
+    padding: 2px 0px 1px 17px;
+    width: 425px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    border: none;
+    outline: none;
+}
+.search .form a {
+    font-family: icomoon;
+    line-height: 28px;
+    color: #999;
+}
+.search .form .button {
+    position: absolute;
+    right: 1px;
+    width: 58px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color: #e1251b;
+    font-size: 20px;
+    margin-top: 1px ;
+}
+.search .form .icon {
+    font-family: icomoon;
+    font-style: normal;
+    color: white;
+}
+.search .cart {
+    position: absolute;
+    left: 833px;
+    top: 24px;
+    width: 130px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #e3e4e5
+}
+.search .cart i {
+    font-size: 14px;
+}
+.search .cart a {
+    font-size: 12px;
+    color: #e1251b;
+}
+#hotwords {
+    position: absolute;
+    left: 260px;
+    top: 60px;
+    height: 20px;
+    line-height: 20px;
+}
+#hotwords a {
+    font-size: 12px;
+    margin: 0px 10px 0px 0px;
+    color:#999 ;
+}
+#hotwords a:hover {
+    color: #c81623;
+}
+#hotwords a.strong {
+    color: #c81623;
+}

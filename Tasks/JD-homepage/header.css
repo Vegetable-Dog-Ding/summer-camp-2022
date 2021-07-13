@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    background-color:#e3e4e5;
+    min-width:1190px; 
+    height: 30px;
+    justify-content: center;
+}
+.header .border {
+    display: flex;
+    width: 1190px;
+    color: #999999;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.header .location {
+    position: relative;
+}
+.header .location .text-icon {
+    margin-right: 434px;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.5s ease;
+}
+
+.header  a {
+    line-height: 30px;
+    color: #999999;
+    display: inline-block;
+    white-space: nowrap;
+}
+.header .border .header-a {
+    padding-right: 5px;
+}
+.header .spacer {
+    width: 1px;
+    height: 10px;
+    margin: 12px 5px 0px;
+    background: #CCCCCC;
+}
+.header i.icon {
+    font-family: icomoon;
+    color: #f10215;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.header a:hover {
+    color: red;
+}
+.window5 {
+    position: absolute;
+    left: 0px;
+    top:30px ;
+    display: none;
+    background-color:#fff ;
+    z-index: 1;
+    padding: 22px 14px;
+    border:1px solid #999999;
+    border-collapse: collapse;
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 4px -3px black;
+}
+.header .location .text-icon:hover {
+    background-color: #ffffff;
+    border:1px solid #999999;
+    border-bottom:none ;
+}
+.header .location .text-icon:hover+.window5 {
+    display: block;
+}
+.header .location table td {
+    height: 28px;
+    width: 69px;
+}
+

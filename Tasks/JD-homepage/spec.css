@@ -1,0 +1,18 @@
+.spec .spec1 {
+    height: 340px;
+    width: 1190px;
+    margin: 20px auto ;
+    background-color: indianred;
+}
+.spec .nice-goods {
+    height: 260px;
+    width: 1190px;
+    margin:0px auto;
+    background-color: indigo;
+}
+.spec .spec2 {
+    height: 340px;
+    width: 1190px;
+    margin: 20px auto;
+    background-color: khaki;
+}
