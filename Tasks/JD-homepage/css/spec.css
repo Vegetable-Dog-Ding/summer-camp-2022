@@ -1,0 +1,120 @@
+.spec .spec1 {
+    height: 340px;
+    width: 1190px;
+    margin: 20px auto ;
+    background-color: indianred;
+}
+.spec .nice-goods {
+    display: flex;
+    height: 260px;
+    width: 1190px;
+    margin:0px auto;
+}
+.spec .spec2 {
+    height: 340px;
+    width: 1190px;
+    margin: 20px auto;
+    background-color: khaki;
+}
+.nice-goods .nicegoods-left {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/nicegoods-left-image.png);
+    width: 190px;
+    height: 100%;
+}
+.nice-goods .nicegoods-left .nicegoods-logo {
+    background-image: url(../images/nicegoods-logo.png);
+    width: 160px;
+    height: 90px;
+    margin-top: 15px;
+}
+.nice-goods .nicegoods-left .nicegoods-logo .nicegoods-logo-text {
+    color: rgba(255,255,255,.8);
+    font-size: 16px;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.nice-goods .nicegoods-left:hover i {
+    border-radius: 16px;
+    background-color: red;
+}
+.nice-goods .nicegoods-left i {
+    transition: all 0.3s ease;
+}
+.nice-goods .nicegoods-right {
+    position: relative;
+    height: 100%;
+    width: 990px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.nice-goods .nicegoods-right .nicegoods-scroll .scroll-item {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 50px;
+    width: 150px;
+}
+.nice-goods .nicegoods-right .nicegoods-scroll .scroll-item img {
+    width: 100%;
+    height: 150px;
+    transition: all 0.3s ease;
+}
+.nice-goods .nicegoods-right .nicegoods-scroll .scroll-item .scroll-names {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-1025px);
+    }
+}
+.nice-goods .nicegoods-right .nicegoods-scroll {
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    white-space: nowrap;
+}
+.nice-goods .nicegoods-right .nicegoods-scroll:hover {
+    animation-play-state:paused;
+}
+.nice-goods .nicegoods-right a:hover {
+    filter: brightness(120%);
+    color: red;
+}
+.nice-goods .nicegoods-right .scroll-bar {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    height: 3px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    display: none;
+}
+.nice-goods .nicegoods-right .nicegoods-scroll:hover + .scroll-bar, .scroll-points {
+    display: block;
+}
+/* .nice-goods .nicegoods-right .scroll-bar .scroll-points {
+    width: 99px;
+    height: 9px;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.5px;
+    display: none;
+} */

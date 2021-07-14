@@ -62,14 +62,13 @@
 }
 .search .form .button {
     position: absolute;
-    right: 1px;
+    right: 0px;
     width: 58px;
-    height: 30px;
+    height: 33px;
     line-height: 30px;
     border: none;
     background-color: #e1251b;
     font-size: 20px;
-    margin-top: 1px ;
 }
 .search .form .icon {
     font-family: icomoon;
