@@ -1,8 +1,8 @@
 .spec .spec1 {
+    display: flex;
     height: 340px;
     width: 1190px;
     margin: 20px auto ;
-    background-color: indianred;
 }
 .spec .nice-goods {
     display: flex;
@@ -83,7 +83,7 @@
 }
 .nice-goods .nicegoods-right .nicegoods-scroll {
     animation-name: scroll;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function:linear;
     white-space: nowrap;
@@ -118,3 +118,92 @@
     margin-top: -4.5px;
     display: none;
 } */
+.spec1-left {
+    position: relative;
+    height: 100%;
+    width: 590px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+.spec1-right {
+    height: 100%;
+    width: 590px;
+    background-color: rgb(28, 189, 50);
+}
+.spec1-left .hd {
+    height: 60px;
+    padding: 12px 20px 0 20px;
+}
+.hd a {
+    display: flex;
+    height: 32px;
+}
+.hd h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-right: 5px;
+}
+.hd i {
+    line-height: 32px;
+}
+.hd a:hover i {
+    color: red;
+}
+.spec1-left .bd {
+    position: relative;
+    width: 560px;
+    height: 270px;
+    margin: 0 15px;
+}
+.bd .inner {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+}
+.bd .emerge {
+    visibility: visible;
+}
+.inner a {
+    display: block;
+    width: 170px;
+    height: 220.4px;
+    margin-right: 6px;
+}
+.inner .left img {
+    height: 100%;
+    width: 100%;
+}
+.inner .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 18px 0 0 19px;
+
+}
+.inner .right .right-items {
+    width: 170px;
+    height: 89px;
+}
+.inner .right-items a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.inner .right-items a img {
+    width: 100%;
+    height: 100%;
+}
+.spec1-left .bd-head {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+}
+.spec1-left .bd-head a {
+    display: inline-block;
+    margin: 0 13.5px;
+    font-size: 14px;
+    color: #999;
+}
+

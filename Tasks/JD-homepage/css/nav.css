@@ -57,15 +57,16 @@
 }
 .search .form a {
     font-family: icomoon;
-    line-height: 28px;
+    line-height: 30px;
     color: #999;
 }
 .search .form .button {
     position: absolute;
-    right: 0px;
+    top: -1px;
+    right: -1px;
     width: 58px;
-    height: 33px;
-    line-height: 30px;
+    height: 34px;
+    line-height: 34px;
     border: none;
     background-color: #e1251b;
     font-size: 20px;

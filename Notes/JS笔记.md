@@ -348,6 +348,143 @@
          10.concat 连接两个数组 slice(begin,end) 数组截取 splice(从第几个开始，要删除个数)(会影响原数组)
         ```
 
-        
+      - 字符串对象（字符数组）
+      
+        ```
+        1, 字符串不可变
+        2，查找指定字符在字符串的位置x.indexOf('要查找的字符'，【起始位置（索引号】)（找不到返回-1）
+        3，根据位置返回字符 (1)x.charAt(索引号) return 字符
+        (2)x.charCodeAt(索引号) 返回1该字符对应的ASCII
+        (3)x[索引号]
+        4,拼接字符串 concat/+
+        5.replace(‘被替换的字符','替换为的字符')(只会替换第一个)
+        6， split('分隔符') eg: var str2= 'red,pink,blue';
+        str2.split(',')
+        ```
+      
+        ![字符串](https://i.loli.net/2021/07/16/cND4LC1Eul9aWXI.png)
 
-    ​	
+    13. 数据类型
+        - 简单数据类型（值传递) string number boolean undefined null
+        - 复杂(引用传递---指针) 其他
+
+
+
+### DOM
+
+![DOM树](https://i.loli.net/2021/07/16/iqxwvchyRHQ4OP3.png)
+
+1. 获取元素
+
+   - ID获取 document.getElementById('id') **(大小写敏感的字符串)**
+
+     返回该元素对象 
+
+   - console.dir() 查看该元素的属性和方法
+
+   - 根据标签名获取 getElementsByTagName('标签名') 返回获取过来元素对象的集合，以伪数组的形式存储
+
+     (没有元素也会返回空的伪数组)
+
+     特定父元素的子元素 先获取父元素，然后父元素.getElementsByTagName('标签名')
+
+   - HTML5新增 I9以上 
+
+     1. x.getElementsByClassName('类名')
+     2. x.querySelector('直接选择器')(只能选第一个)
+     3. x.querySelectorAll('选择器')(所有，伪数组)
+
+   - 获取body
+
+     document.body
+
+   - 获取 document.documentElement
+
+2. 事件三要素
+
+   1. 事件源 事件被触发的对象
+   2. 事件类型 如何触发 onclick/onfocus/onblur
+   3. 事件处理程序 函数赋值的方式完成
+
+   ```
+    var btn = document.getElementById('btn');
+    btn.onclick = function(){}
+   ```
+
+   ![事件](https://i.loli.net/2021/07/16/kc8nBGFfXCHjb7l.png)
+
+3. 操作元素
+
+   1. element.innerTexta（少用）
+
+      从起始位置到终止位置的内容，不识别html标签，纯字符串，同时空格和换行也会去掉
+
+      ```
+      div.innerText = ''
+      ```
+
+   2. element.innerHTML(普通盒子，div....)
+
+      识别html标签，同时空格和换行也会保留
+
+   3. 前两个可以返回内容 x.innerHTML
+
+   4. img.src='' ......
+
+   5. 表单元素   .value  .disabled
+
+   6. 样式属性
+
+      - x.style.xxx = ''; 行内样式 <div style=""> (样式少，改的少)
+
+      - 改类名 :先写好前后类, 直接改类名 x.ClassName=' '
+
+4. 自定义属性（data-属性名）
+
+   - 获取属性值
+
+     1. element.x 只能获取自带的属性
+     2. element.getAttribute(' ')  属性可以自定义
+     3. h5新增： element.dataset.x (x用-连接，驼峰命名法)
+
+   - 修改属性
+
+     1. 赋值
+     2. element.setAttribute(' 属性 ' ,' 值 ')(主要针对自定义属性)
+
+   - 移除属性
+
+     element.removeAttribute(' ')
+
+5. 节点(所有内容)操作(家族关系)
+
+   1. 父节点
+      - x.parentNode (得到理他最近的父节点)
+   2. 子节点
+      - x.childNodes(所有的子节点，文本节点+元素节点)
+      - x.children(获取所有子元素节点)
+      - x.firstChild(第一个节点，不管文本或元素) x.lastChild
+      - (IE9以上)  x.firstElementChild(返回第一个子元素节点，找不到返回null)  x.lastElementChild
+   3. 兄弟节点
+      - x.nextSibling（下一个兄弟节点 包含元素、文本节点）/ x.previousSibling
+      - (IE9以上)x.nextElementSibling/last...
+   4. 创建节点
+      - document.createElement('标签名')
+   5. 添加节点
+      - node.appendChild(指定元素):方法将一个节点添加到指定父节点的子节点列表末尾
+      - node.insertBefore(child,指定元素); 指点子元素的前面
+   6. 删除节点
+      - node.removeChild(child)删除一个子节点，返回删除的节点
+   7. 复制节点
+      - node.cloneNode() (括号内空/false，只复制节点本身，不克隆里面的子节点。括号内为true，全拷贝)
+
+   
+
+
+
+
+
+
+
+
+
