@@ -11,7 +11,10 @@
 .kill .kill-list {
     position: relative;
     width: 800px;
+}
+.kill .kill-items {
     display: flex;
+    overflow: hidden;
 }
 .kill .kill-brand {
     width: 180px;

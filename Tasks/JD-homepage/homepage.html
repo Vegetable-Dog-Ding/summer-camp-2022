@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/spec.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/icon.css">
+    <link rel="shortcut icon" href=" ./favicon.ico" />
 </head>
 
 <body>
@@ -127,22 +128,26 @@
         </div>
         <div class="grid-col2">
             <div class="col2-left">
-                <a href="#"><img
-                        src="https://img14.360buyimg.com/pop/s1180x940_jfs/t1/195610/31/12147/83154/60e557fbEef73a68a/5a9ddcbc508bb8b5.jpg.webp"
-                        class="col2-left-image"></a>
-                <button class="next-page"><i class="icon" id="next-page-icon"></i></button>
-                <div class="last-page"><i class="icon" id="last-page-icon"></i></div>
-                <div class="page-list">
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                    <i class="icon"></i>
+                <div class="pageitems">
+                    <a href="#"><img
+                            src="https://img14.360buyimg.com/pop/s1180x940_jfs/t1/195610/31/12147/83154/60e557fbEef73a68a/5a9ddcbc508bb8b5.jpg.webp"
+                            class="col2-left-image">
+                    </a>
+                    <a href="#">
+                        <img src="./images/fridge.webp" class="col2-left-image">
+                    </a>
+                    <a href="#">
+                        <img src="./images/build.jpg" class="col2-left-image">
+                    </a>
                 </div>
+                <button class="next-page"><i class="icon" id="next-page-icon"></i></button>
+                <button class="last-page"><i class="icon" id="last-page-icon"></i></button>
+                <ul class="page-list">
+
+                </ul>
             </div>
+            <script src="./js/animate.js"></script>
+            <script src="./js/grid_change.js"> </script>
             <div class="col2-right">
                 <a href="#"><img
                         src="https://img11.360buyimg.com/babel/s380x300_jfs/t1/156373/29/12285/68780/603f2b75E4fd09458/a6aa23f1163ff561.jpg.webp"
@@ -208,86 +213,172 @@
             <img src="./images/kill.png" style="width: 100%;height: 100%;">
         </a>
         <div class="kill-list">
-            <a href="#" class="kill-item">
-                <div class="kill-item-page">
-                    <img src="./images/phone.webp" style="height: 140px; width: 140px;">
-                </div>
-                <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
-                <div class="kill-item-price">
-                    <table>
-                        <tr>
-                            <td class="kill-sale">
-                                <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
-                                <span><strong>4.90</strong></span>
-                            </td>
-                            <td class="normal-price">
-                                <del><i class="icon" style="font-size: 10px;"></i>
-                                    <span>39.90</span></del>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </a>
-            <a href="#" class="kill-item">
-                <div class="kill-item-page">
-                    <img src="./images/phone.webp" style="height: 140px; width: 140px;">
-                </div>
-                <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
-                <div class="kill-item-price">
-                    <table>
-                        <tr>
-                            <td class="kill-sale">
-                                <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
-                                <span><strong>4.90</strong></span>
-                            </td>
-                            <td class="normal-price">
-                                <del><i class="icon" style="font-size: 10px;"></i>
-                                    <span>39.90</span></del>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </a>
-            <a href="#" class="kill-item">
-                <div class="kill-item-page">
-                    <img src="./images/phone.webp" style="height: 140px; width: 140px;">
-                </div>
-                <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
-                <div class="kill-item-price">
-                    <table>
-                        <tr>
-                            <td class="kill-sale">
-                                <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
-                                <span><strong>4.90</strong></span>
-                            </td>
-                            <td class="normal-price">
-                                <del><i class="icon" style="font-size: 10px;"></i>
-                                    <span>39.90</span></del>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </a>
-            <a href="#" class="kill-item">
-                <div class="kill-item-page">
-                    <img src="./images/phone.webp" style="height: 140px; width: 140px;">
-                </div>
-                <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
-                <div class="kill-item-price">
-                    <table>
-                        <tr>
-                            <td class="kill-sale">
-                                <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
-                                <span><strong>4.90</strong></span>
-                            </td>
-                            <td class="normal-price">
-                                <del><i class="icon" style="font-size: 10px;"></i>
-                                    <span>39.90</span></del>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </a>
+            <div class="kill-items">
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/phone.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>4.90</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>39.90</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/phone.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>4.90</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>39.90</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/phone.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>4.90</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>39.90</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/phone.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">联想拯救者电竞手机Pro 12GB</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>4.90</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>39.90</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/computer.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">【二手9成新】联想Lenovo台式电脑整机主机显示器全套i3双核i5四核i7家商用网课学习办公游戏
+                        【套四】i3-8G-120G高速固态送高清显示器</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>899.00</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>1298.00</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/computer.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">【二手9成新】联想Lenovo台式电脑整机主机显示器全套i3双核i5四核i7家商用网课学习办公游戏
+                        【套四】i3-8G-120G高速固态送高清显示器</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>899.00</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>1298.00</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/computer.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">【二手9成新】联想Lenovo台式电脑整机主机显示器全套i3双核i5四核i7家商用网课学习办公游戏
+                        【套四】i3-8G-120G高速固态送高清显示器</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>899.00</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>1298.00</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <a href="#" class="kill-item">
+                    <div class="kill-item-page">
+                        <img src="./images/computer.webp" style="height: 140px; width: 140px;">
+                    </div>
+                    <p class="kill-item-title">【二手9成新】联想Lenovo台式电脑整机主机显示器全套i3双核i5四核i7家商用网课学习办公游戏
+                        【套四】i3-8G-120G高速固态送高清显示器</p>
+                    <div class="kill-item-price">
+                        <table>
+                            <tr>
+                                <td class="kill-sale">
+                                    <i class=" icon" style="font-size: 10px; vertical-align: middle;"></i>
+                                    <span><strong>899.00</strong></span>
+                                </td>
+                                <td class="normal-price">
+                                    <del><i class="icon" style="font-size: 10px;"></i>
+                                        <span>1298.00</span></del>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
             <button class="kill-next" style="text-indent: 5px;">
                 <i class="icon" id="kill-next-icon"></i>
             </button>
@@ -328,137 +419,137 @@
                     </a>
                 </div>
                 <div class="bd">
-                    <div class="inner emerge" >
+                    <div class="inner emerge">
                         <div class="left">
-                            <a href="#"><img src="./images/shoes.png" ></a>
+                            <a href="#"><img src="./images/shoes.png"></a>
                         </div>
                         <div class="right">
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="inner">
                         <div class="left">
-                            <a href="#"><img src="./images/baokuangli.webp" ></a>
+                            <a href="#"><img src="./images/baokuangli.webp"></a>
                         </div>
                         <div class="right">
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/phone.webp">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/phone.webp">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/phone.webp">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/phone.webp">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="inner">
                         <div class="left">
-                            <a href="#"><img src="./images/xiangzi.webp" ></a>
+                            <a href="#"><img src="./images/xiangzi.webp"></a>
                         </div>
                         <div class="right">
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="inner">
                         <div class="left">
-                            <a href="#"><img src="./images/huazhuangpin.webp" ></a>
+                            <a href="#"><img src="./images/huazhuangpin.webp"></a>
                         </div>
                         <div class="right">
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="inner">
                         <div class="left">
-                            <a href="#"><img src="./images/cloth1.png" ></a>
+                            <a href="#"><img src="./images/cloth1.png"></a>
                         </div>
                         <div class="right">
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                             <div class="right-items">
                                 <a href="#">
-                                    <img src="./images/right-item.png" >
+                                    <img src="./images/right-item.png">
                                 </a>
                             </div>
                         </div>
@@ -467,6 +558,7 @@
             </div>
             <div class="spec1-right"></div>
         </div>
+        <script src="./js/spec_change.js"></script>
         <div class="nice-goods">
             <a href="#" class="nicegoods-left">
                 <div class="nicegoods-logo">
@@ -479,43 +571,43 @@
             <div class="nicegoods-right">
                 <div class="nicegoods-scroll">
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image.webp" >
+                        <img src="./images/scroll-image.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image2.webp" >
+                        <img src="./images/scroll-image2.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image3.webp" >
+                        <img src="./images/scroll-image3.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image4.webp" >
+                        <img src="./images/scroll-image4.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image5.webp" >
+                        <img src="./images/scroll-image5.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image.webp" >
+                        <img src="./images/scroll-image.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image2.webp" >
+                        <img src="./images/scroll-image2.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image3.webp" >
+                        <img src="./images/scroll-image3.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image4.webp" >
+                        <img src="./images/scroll-image4.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                     <a href="#" class="scroll-item">
-                        <img src="./images/scroll-image5.webp" >
+                        <img src="./images/scroll-image5.webp">
                         <div class="scroll-names">微软 xss数字版 游戏机</div>
                     </a>
                 </div>
@@ -525,7 +617,7 @@
             </div>
         </div>
         <div class="spec2"></div>
-    </div>ov
+    </div>
     <div class="footer">
         <div class="service"></div>
         <div class="help"></div>
@@ -555,22 +647,6 @@
             </a>
         </div>
     </div>
-    <script>
-        var bd_head = document.querySelector('.bd-head');
-        var a=bd_head.querySelectorAll('a');
-        console.log(a);
-        var inner=document.querySelectorAll('.bd .inner');
-        console.log(inner);
-        for(var i=0;i<a.length;i++){
-            a[i].onmouseover=function(){
-                for(var j=0;j<a.length;j++){
-                    inner[j].className='inner';
-                }
-                console.log(i);
-                inner[i].className='inner emerge';
-            }
-        }
-    </script>
 </body>
 
 </html>

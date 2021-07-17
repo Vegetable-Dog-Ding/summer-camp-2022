@@ -478,6 +478,13 @@
    7. 复制节点
       - node.cloneNode() (括号内空/false，只复制节点本身，不克隆里面的子节点。括号内为true，全拷贝)
 
+6. 动画函数
+
+   - 获取位置 offsetLeft....
+   - div.style.left = div.offsetLeft + 5 +'px';
+   - 定时器obj.timer =setInterval(function(){},xx)(每xx毫秒执行一次function)
+   - 停止定时器 clearInterval(timer)
+
    
 
 

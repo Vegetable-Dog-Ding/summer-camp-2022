@@ -322,6 +322,8 @@ input:focus {}
 
        ![direction](https://i.loli.net/2021/07/09/VXsA2vYtxGKgwFT.png)
 
+       
+
     2. justify-content
 
        ![主轴上位置](https://i.loli.net/2021/07/09/JLRiI7srFdxnQjX.png)
@@ -334,7 +336,7 @@ input:focus {}
 
        ![侧轴排列](https://i.loli.net/2021/07/09/asD1zrfkmpc4diF.png)
 
-    5. align-contetn(换行)(单行下没效果)
+    5. align-content(换行)(单行下没效果)
 
        ![侧轴排列](https://i.loli.net/2021/07/09/oF7nTWhw8edft3B.png)
 
@@ -345,7 +347,97 @@ input:focus {}
        ```
 
        
-    
+
     7. flex 属性
-    
+
        ![flex](https://i.loli.net/2021/07/10/JkUdb6QFjXDKorG.png)
+
+15. #### 定位
+
+    ```
+    选择器 {position: xxx}
+    top:/leftz;/bottom:/right:/
+    ```
+
+    
+
+    1. static(无定位)
+    2. relative (相对原位置，不会影响其他标准流)
+    3. absolute(不再占有原位置)
+       1. 无父/父亲无定位 ----相对文档定位
+       2. 有（相对/绝对/固定) ,以最近一级带有定位的父级为准
+    4. 定位和margin可以一起使用实现居中等效果
+    
+    **子绝父相**
+    
+    4. fixed
+    
+    5. z-index 定位叠放次序
+    
+       (数值越大，盒子越靠上)（如果属性相同，则按照书写顺序后来居上）
+    
+    6. 行内元素设置位置就可以设宽高，块级元素设定位大小默认内容大小
+    
+    7. 元素的显示与隐藏
+    
+       ```
+       display:none ;隐藏对象 (不再占有原来的位置)
+       display:block;显示对象
+       visibility (隐藏还会占位置)
+       overflow:scroll 溢出部分显示滚动条(不溢出也显示)
+       ```
+    
+16. #### 字体图标
+
+    字体图标下载：http://icomoon.io       www.iconfont.cn
+
+    ```
+    下好后把font文件放到根目录里 
+    
+    style.css内容复制到block
+    
+    再demo里复制对应小框框
+    
+    字体设icomoon
+    ```
+
+17. 小三角
+
+    ```
+      width height:0 border四个边各是一个三角形
+    ```
+
+18. 鼠标样式
+
+    ![鼠标样式](https://i.loli.net/2021/07/11/NEuzy1BIthp6wcH.png)
+
+19. 取消表单轮廓线
+
+    input, textarea {outline:none;}
+
+    textarea { resize:none;}
+
+20. 元素对齐
+
+    vertical-align（设在图片或文本框里）
+
+21. css3过渡(谁变给谁加)(多个属性利用逗号分隔\all)
+
+    ![css3过度](https://i.loli.net/2021/07/11/NWSJVfiqKleRBLG.png)
+
+
+
+22. css3动画
+
+    ![动画定义](https://i.loli.net/2021/07/14/QAhmp7ZftPJCS9v.png)
+    
+    
+    
+    ![动画属性](https://i.loli.net/2021/07/14/6oeO3Vx1rMckdTg.png)
+
+
+
+23. transform属性
+24. favicon图标
+    - 截完图，找bitbug.net网站转换，放到根目录，复制一行代码在head标签里
+

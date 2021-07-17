@@ -32,11 +32,23 @@
 }
 .grid-col2 .col2-left {
     margin-right: 10px;
+    width: 590px;
+    height: 470px;
     position: relative;
+    overflow: hidden;
+}
+.grid .col2-left .pageitems {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 .grid-col2 .col2-left .col2-left-image {
     width: 590px;
     height: 470px;
+}
+.col2-left ul li.current {
+    background-color: red;
 }
 .grid-col2 .col2-right a {
     height: 150px;
@@ -172,6 +184,9 @@
     border: 0px;
     font-size: 20px;
 }
+.grid-col2 .next-page:hover, .last-page:hover {
+    background-color:  rgba(0,0,0,.35);
+}
 .grid-col2 .col2-left .next-page #next-page-icon, #last-page-icon {
     color:#dde5ea;
 }
@@ -181,10 +196,19 @@
 }
 .col2-left .page-list {
     position: absolute;
+    display: flex;
     left: 30px;
     bottom: 20px;
-    font-size: 16px;
-    color: rgba(225,225,225,.4);
+    background-color:rgba(225,225,225,0.3);
+    border-radius: 7px;
+    padding:2px 0 2px 4px;
+}
+.grid .page-list li {
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 4px;
 }
 .grid-col3 .news .news-spacer {
     position: absolute;

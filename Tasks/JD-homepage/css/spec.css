@@ -207,3 +207,7 @@
     color: #999;
 }
 
+.spec1-left .bd-head a:hover {
+    text-decoration: underline;
+    color: red;
+}
