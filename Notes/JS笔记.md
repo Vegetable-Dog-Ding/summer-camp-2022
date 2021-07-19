@@ -485,13 +485,85 @@
    - 定时器obj.timer =setInterval(function(){},xx)(每xx毫秒执行一次function)
    - 停止定时器 clearInterval(timer)
 
-   
+7. 高级事件
 
+   - 传统注册（事件三要素）：唯一需求，后面的会覆盖前面的。
+   - 方法监听：addEventListener()  :同一个元素同一个事件可以注册多个监听器，按注册顺序依次执行
 
+    ![监听](https://i.loli.net/2021/07/19/nAGdvOKpao91kg6.png)
 
+```
+x.addEventListener('click',function(){},useCapture);
+第三个参数是true，则为捕获阶段，若父也有点击事件，点击子是先执行父再执行子；若为false/省略 ，冒泡，先子后父。
+```
 
+8. 删除事件
 
+   - 传统 eg:div.onclick=null;
 
+   - ```
+     function fn(){
+     alert(22);
+     x.removeEventListener('click',fn（不用写小括号）);
+     }
+     x.addEventListener('click',fn);
+     ```
 
+   - 
 
+9. 事件对象
+
+   - div.onclick = function(event){}
+
+   - event(其他名字都可以)不用传参，是事件的一系列相关数据的集合，跟事件相关。
+
+   - 可以console.log()看属性
+
+   - e.target指向触发对象，this指向绑定对象（ul绑定点击li，target指li，this指ul）
+
+   - 阻住默认行为（让链接不跳转(给a的click事件函数加这个方法），提交不提交）：e.preventDefault()
+
+   - 阻止事件冒泡e.stopPropagation()
+
+   - 事件委托(ul里很多li)：ul设事件监听器，通过点击li后冒泡到ul，所以直接设ul的触发事件就可。e.target又可以单独指向点击的li
+
+   - 禁止事件
+
+     ```
+     document.addEventListener('contextmenu',function(e){
+     e.preventDefault();})
+     //禁止右键得到菜单
+     document.addEventListener('selectstart',function(e){
+     e.preventDefault();})
+     //禁止选中
+     ```
+
+   - 鼠标事件对象
+
+     ```
+     document.addEventListener('click',function(e){console.log(e);});
+     e.clientX/Y 都只是相对可视窗口，跟页面滚动无关
+     e.page相对文档的
+     ```
+
+     ![鼠标事件](https://i.loli.net/2021/07/19/yVdfilZkqp3Ee42.png)
+
+![事件常见属性](https://i.loli.net/2021/07/19/gq8Ma7kPxnLvI5j.png)
+
+9. - 常用键盘事件
+
+     ```
+     按下不松手一直触发
+     ```
+
+   - 键盘事件对象
+
+     ```
+     keycode对应ASCII值
+     (keyup\keydown不区分大小写)(keypress识别)
+     ```
+
+     
+
+![键盘事件](https://i.loli.net/2021/07/19/nQMclI8eLP7GOYx.png)
 
