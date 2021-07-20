@@ -567,3 +567,9 @@ x.addEventListener('click',function(){},useCapture);
 
 ![键盘事件](https://i.loli.net/2021/07/19/nQMclI8eLP7GOYx.png)
 
+10. 元素滚动scroll系列
+    - ![scroll](https://i.loli.net/2021/07/20/T9NRFfiwBuz5mgy.png)
+    - ![scrolleg](https://i.loli.net/2021/07/20/VeXUuZaAKEYdptf.png)
+    - 页面被卷去的头部：可以通过window.pageYOffset获得，左侧被卷去 window.pageXOffset
+    - 滚动窗口至文档中的特定位置:window.scroll(x,y)(直接写数字，不写单位)
+

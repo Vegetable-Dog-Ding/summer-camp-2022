@@ -24,14 +24,21 @@ i.icon {
     position: fixed;
     left: 50%;
     margin-left:622px;
-    top: 183px;
+    top: 80px;
     background-color: #fff;
+}
+.unfixed {
+    position: absolute;
+    left: 50%;
+    margin-left:622px;
+    top: 680px;
 }
 .fixed-column div {
     display: flex;
     width: 58px;
     height: 60px;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     font-size: 14px;
     white-space: nowrap;
@@ -45,10 +52,8 @@ i.icon {
 }
 .fixed-column div:hover {
     background-color: #c81623;
+    color: #fff;
 }
-.fixed-column div:hover a {
-     color: #fff;
-}
-.fixed-column a {
+.fixed-column div span {
     display: block;
 }

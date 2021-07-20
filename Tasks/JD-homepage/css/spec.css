@@ -11,10 +11,11 @@
     margin:0px auto;
 }
 .spec .spec2 {
+    display: flex;
+    justify-content: space-between;
     height: 340px;
     width: 1190px;
     margin: 20px auto;
-    background-color: khaki;
 }
 .nice-goods .nicegoods-left {
     display: flex;
@@ -211,3 +212,21 @@
     text-decoration: underline;
     color: red;
 }
+.spec2 .spec2-box {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 340px;
+    background-color: #fff;
+}
+.spec2 .spec2-box .spec2-1-hd span {
+    height: 32px;
+    padding-left: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+}
+/* .spec2 .spec2-box .spec2-1-hd:hover i {
+
+} */

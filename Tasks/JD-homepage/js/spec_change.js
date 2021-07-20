@@ -11,4 +11,7 @@ for(var i=0;i<a.length;i++){
         inner[k].className='inner emerge';
     }
 }
-var kill_items = document.querySelector('.kill-items');
+var specImg=document.querySelector('.spec #random-page .left img');
+var specPageRandom=['./images/build.jpg','./images/cloth.webp','./images/jeans.jpg','./images/shoes.png'];
+var specRandomNum= Math.floor(Math.random() * specPageRandom.length);
+specImg.src=specPageRandom[specRandomNum];
