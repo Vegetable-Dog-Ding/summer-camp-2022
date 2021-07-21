@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        var i = 5;
+        var timer = setInterval(function(){
+            if(i==0){location.href='https://www.bilibili.com/video/BV1Sy4y1C7ha?p=283';}
+            else {div.innerHTML='你将在'+i +'秒后跳转';
+            i--;}
+        },1000)
+    </script>
+</body>
+</html>
