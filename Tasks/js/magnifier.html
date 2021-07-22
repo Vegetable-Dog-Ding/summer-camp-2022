@@ -9,18 +9,42 @@
         .box {
             position: relative;
             width: 300px;
-            height: 400px;
+            height: 300px;
             border: 1px solid red;
         }
         img {
             width: 100%;
         }
         .mask {
+            display: none;
             position: absolute;
-            width: 100px;
-            height: 150px;
+            top: 0px;
+            left: 0px;
+            width: 200px;
+            height: 200px;
             background-color: yellow;
             opacity: .5;
+            cursor: move;
+        }
+        .big {
+            display: none;
+            position: absolute;
+            left:320px;
+            top:0;
+            width: 450px;
+            height: 450px;
+            border: 1px solid black;
+            overflow: hidden;
+            background-image: url(../JD-homepage/images/brand.webp);
+            background-size: 150% 150%;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+        }
+        .box:hover .big {
+            display: block;
+        }
+        .box:hover .mask {
+            display: block;
         }
     </style>
 </head>
@@ -28,15 +52,36 @@
     <div class="box">
         <img src="../JD-homepage/images/brand.webp" >
         <div class="mask"></div>
+        <div class="big"></div>
     </div>
     <script>
         var box = document.querySelector('.box');
         var mask = document.querySelector('.mask');
+        var big=document.querySelector('.big');
         box.addEventListener('mousemove',function(e){
-            var x = e.offsetX;
-            var y = e.offsetY;
-            mask.style.left=x+'px';
-            mask.style.top=y+'px';
+            var x = e.pageX - this.offsetLeft;
+            var y = e.pageY - this.offsetTop;
+            var maskX=x-mask.offsetWidth/2;
+            var maskY=y-mask.offsetHeight/2;
+            if(maskX<=0){
+                maskX=0;
+            }
+            else if(maskX>=box.offsetWidth-mask.offsetWidth){
+                maskX=box.offsetWidth-mask.offsetWidth;
+            }
+            if(maskY<=0){
+                maskY=0;
+            }
+            else if(maskY>=box.offsetHeight-mask.offsetHeight){
+                maskY=box.offsetHeight-mask.offsetHeight;
+            } 
+            mask.style.left=maskX+'px';
+            mask.style.top=maskY+'px';
+            var xor=-box.offsetWidth/4;
+            var yor=-box.offsetHeight/4;
+            var xlas=-(x-box.offsetWidth/2)*1.5+xor;
+            var ylas=(y-box.offsetHeight/2)*(-1.5)+yor;
+            big.style.backgroundPosition=xlas+'px'+' '+ ylas+'px';
         })
     </script>
 </body>
